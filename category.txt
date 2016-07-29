@@ -1,0 +1,73 @@
+[{
+      "career_id": "1",
+      "career_name": "Parent1",
+      "depended": "0",
+      "ordering": "1"
+    },
+    {
+      "career_id": "2",
+      "career_name": "Parent2",
+      "depended": "0",
+      "ordering": "2"
+    },
+    {
+      "career_id": "3",
+      "career_name": "Parent3",
+      "depended": "0",
+      "ordering": "3"
+    },
+    {
+      "career_id": "4",
+      "career_name": "ChildA",
+      "depended": "1",
+      "ordering": "4"
+    },
+    {
+      "career_id": "5",
+      "career_name": "ChildB",
+      "depended": "2",
+      "ordering": "5"
+    },
+    {
+      "career_id": "6",
+      "career_name": "ChildC",
+      "depended": "3",
+      "ordering": "6"
+    },
+    {
+      "career_id": "7",
+      "career_name": "grandChildA",
+      "depended": "4",
+      "ordering": "7"
+    },
+    {
+      "career_id": "8",
+      "career_name": "grandChildB",
+      "depended": "5",
+      "ordering": "8"
+    },
+    {
+      "career_id": "9",
+      "career_name": "grandChildC",
+      "depended": "6",
+      "ordering": "9"
+    },    
+    {
+      "career_id": "10",
+      "career_name": "grandChildD",
+      "depended": "5",
+      "ordering": "10"
+    },
+    {
+      "career_id": "11",
+      "career_name": "grandChildE",
+      "depended": "6",
+      "ordering": "11"
+    },
+    {
+      "career_id": "12",
+      "career_name": "Linh kiện, thiết bị điện tử & viễn thông",
+      "depended": "3",
+      "ordering": "12"
+    }
+]
