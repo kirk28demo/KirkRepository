@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+</head>
+<style>
+    div ul{
+        list-style-type: circle;
+    }
+</style>
+<body >
+    <div ng-app="" ng-controller="DanhMucController">
+        <ul >
+            <li ng-repeat="danhmuc in DanhMucList" ng-if="danhmuc.depended==0">{{danhmuc.career_name}}
+               <ul>
+                   <li ng-repeat="danhmuc in DanhMucList" ng-if="danhmuc.depended==2">
+                    {{danhmuc.career_name}}
+                    <ul ng-repeat="danhmuc in DanhMucList" ng-if="danhmuc.depended==4">
+                        <li>{{danhmuc.career_name}}</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+<script>
+    function DanhMucController($scope, $http) {
+        var url = "category.txt";
+        $http.get(url).success(function(response) {
+            $scope.DanhMucList = response;
+        });
+    }
+</script>
+</html>
